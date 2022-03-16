@@ -51,7 +51,7 @@ jobs:
       - name: Update current version
         if: steps.check.outputs.need_update == 1
         run: |
-          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.email "7108358+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git pull origin ${{github.ref}} --ff-only
           echo ${{ steps.check.outputs.latest_version }} > current.${{ matrix.region }}.${{ matrix.model }}
