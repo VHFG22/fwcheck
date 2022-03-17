@@ -14,7 +14,7 @@ jobs:
       max-parallel: 1
       matrix:
         model: [SM-G960F, SM-G965F, SM-N960F]
-        region: [DBT, AUT, XEO, BTU, INS, XSG, NEE, ROM]
+        region: [DBT, TPH]
 
     steps:
       - name: Check existance of device and firmware
