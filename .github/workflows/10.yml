@@ -14,7 +14,7 @@ jobs:
       max-parallel: 1
       matrix:
         model: [SM-G970F, SM-G973F, SM-G975F, SM-G977B, SM-N970F, SM-N975F, SM-N976B, SM-N770F]
-        region: [DBT, TPH]
+        region: [DBT]
 
     steps:
       - name: Check existance of device and firmware
