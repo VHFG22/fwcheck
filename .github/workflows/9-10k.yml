@@ -12,6 +12,7 @@ jobs:
 
     strategy:
       fail-fast: false
+      max-parallel: 1
       matrix:
           model: [SM-G960N, SM-G965N, SM-N960N, SM-G970N, SM-G973N, SM-G975N, SM-G977N, SM-N971N, SM-N976N]
           region: [KTC]

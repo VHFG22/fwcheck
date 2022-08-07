@@ -12,6 +12,7 @@ jobs:
 
     strategy:
       fail-fast: false
+      max-parallel: 1
       matrix:
           model: [SM-G980F, SM-G981B, SM-G985F, SM-G986B, SM-G988B, SM-N980F, SM-N981B, SM-N985F, SM-N986B, SM-G991B, SM-G996B, SM-G998B]
           region: [DBT]
