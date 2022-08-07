@@ -1,4 +1,4 @@
-name: Check firmware update for 9-10 series
+name: Check firmware update for 9-10 korean series
 
 on:
   workflow_dispatch:
@@ -13,8 +13,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-          model: [SM-G960F, SM-G965F, SM-N960F, SM-G970F, SM-G973F, SM-G975F, SM-N970F, SM-N975F, SM-N770F]
-          region: [DBT]
+          model: [SM-G960N, SM-G965N, SM-N960N, SM-G970N, SM-G973N, SM-G975N, SM-G977N, SM-N971N, SM-N976N]
+          region: [KTC]
 
     steps:
       - name: Checkout repo
