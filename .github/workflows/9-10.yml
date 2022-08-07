@@ -14,18 +14,8 @@ jobs:
       fail-fast: false
       max-parallel: 1
       matrix:
-		- model: [SM-G960F, SM-G965F, SM-N960F]
-			region: "DBT"
-		- model: [SM-G960N, SM-G965N, SM-N960N]
-			region: "KTC"
-		- model: [SM-G970F, SM-G973F, SM-G975F, SM-N970F, SM-N975F, SM-N770F]
-			region: "DBT"
-		- model: [SM-G970N, SM-G973N, SM-G975N, SM-G977N, SM-N971N, SM-N976N]
-			region: "KTC"
-		- model: [SM-G980F, SM-G981B, SM-G985F, SM-G986B, SM-G988B, SM-N980F, SM-N981B, SM-N985F, SM-N986B]
-			region: "DBT"
-		- model: [SM-G991B, SM-G996B, SM-G998B]
-			region: "DBT"
+          model: [SM-G960F, SM-G965F, SM-N960F, SM-G970F, SM-G973F, SM-G975F, SM-N970F, SM-N975F, SM-N770F]
+          region: [DBT]
 
     steps:
       - name: Checkout repo
