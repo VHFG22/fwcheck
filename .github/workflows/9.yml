@@ -14,7 +14,6 @@ jobs:
       fail-fast: false
       max-parallel: 1
       matrix:
-        include:
 		- model: [SM-G960F, SM-G965F, SM-N960F]
 			region: "DBT"
 		- model: [SM-G960N, SM-G965N, SM-N960N]
